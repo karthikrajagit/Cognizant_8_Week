@@ -1,0 +1,28 @@
+Exercise 7: Financial Forecasting
+public class FinancialForecast {
+    Recursive method 
+    public static double futureValue(double presentValue, double growthRate, int years) {
+        if (years == 0) {
+            return presentValue;
+        }
+        return futureValue(presentValue * (1 + growthRate), growthRate, years - 1);
+    }
+
+    public static void main(String[] args) {
+        double presentValue = 5000;  // initial amount
+        double rate = 0.06;          // 6% annual growth
+        int years = 10;
+
+        double result = futureValue(presentValue, rate, years);
+        System.out.printf("Predicted future value after %d years: ₹%.2f%n", years, result);
+    }
+}
+
+Iterative Method:
+public static double futureValueIterative(double presentValue, double growthRate, int years) {
+    for (int i = 0; i < years; i++) {
+        presentValue *= (1 + growthRate);
+    }
+    return presentValue;
+}
+

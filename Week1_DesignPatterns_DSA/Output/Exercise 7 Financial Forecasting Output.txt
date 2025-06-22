@@ -1,0 +1,2 @@
+Output:
+Predicted future value after 10 years: ₹8954.24

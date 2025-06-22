@@ -1,0 +1,7 @@
+Output:
+Linear Search Result: [103, Mobile, Electronics]
+Binary Search Result: [103, Mobile, Electronics]
+
+Time Complexity:
+Linear Search; O(n)
+Binary Search: O(logn)
